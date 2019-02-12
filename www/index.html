@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>3D Prime</title>
+
+		<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="msapplication-tap-highlight" content="no">
+		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+
+		<link rel="stylesheet" type="text/css" href="resources/css/index.css">
+
+		<script type="text/javascript" src="resources/js/three.min.js"></script>
+		<script type="text/javascript" src="resources/js/STLLoader.js"></script>
+
+		<script type="text/javascript" src="resources/js/index.js"></script>
+	</head>
+	<body>
+		<nav id="availableObjects">
+			<button>Rings</button>
+			<div id="rings"></div>
+
+			<button>Stones</button>
+			<div id="stones"></div>
+		</nav>
+		<nav id="createdObjects">
+			<h3>Created objects</h3>
+			<ul></ul>
+		</nav>
+		<div id="selectedObject">
+			X <input type="range" id="objX" value="0" min="-10" max="10" step="0.1">
+			Y <input type="range" id="objY" value="0" min="-10" max="10" step="0.1">
+			Z <input type="range" id="objZ" value="-40" min="-50" max="-30" step="0.1">
+		</div>
+		<div id="cameraRotation">
+			X <input type="range" id="rotX" value="0" min="-100" max="100" step="0.1">
+			Y <input type="range" id="rotY" value="0" min="-100" max="100" step="0.1">
+			Zoom <input type="range" id="zoom" value="0" min="-20" max="100" step="1">
+		</div>
+
+		<script type="text/javascript" src="resources/js/rangetouch.js"></script>
+	</body>
+</html>

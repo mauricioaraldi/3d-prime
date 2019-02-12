@@ -1,0 +1,137 @@
+/**
+ * General
+ */
+body {
+	font-size: 12px;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+canvas {
+	overflow: hidden;
+}
+/**
+ * End general
+ */
+
+/**
+ * Accordion menu
+ */
+#availableObjects {
+	background-color: #F9F9F9; 
+	padding: .5rem;
+	position: fixed;
+	right: 0;
+	width: 25%;
+	height: 50%;
+}
+
+#availableObjects > button {
+	background-color: #EEEEEE;
+	border: none;
+	color: #444444;
+	cursor: pointer;
+	outline: none;
+	padding: .5rem;
+	text-align: left;
+	transition: 0.4s;
+	width: 100%;
+}
+
+.active,
+#availableObjects > button:hover {
+	background-color: #CCCCCC;
+}
+
+#availableObjects > div {
+	background-color: #FFFFFF;
+	max-height: 0;
+	overflow: hidden;
+	padding: 0 .3rem;
+	transition: all .2s ease-out;
+}
+
+#availableObjects > div > a {
+	background-color: #888888;
+	color: #FFFFFF;
+	display: block;
+	margin-bottom: .1rem;
+	padding: .5rem;
+	text-decoration: none;
+	transition: all .2s ease-out;
+}
+
+#availableObjects > div > a:hover {
+	background-color: #AAAAAA;
+}
+/**
+ * End accordion menu
+ */
+
+/**
+ * Created Objects
+ */
+#createdObjects {
+	background-color: #F9F9F9; 
+	height: 50%;
+	padding: .5rem;
+	position: fixed;
+	right: 0;
+	width: 25%;
+	top: 50%;
+}
+
+#createdObjects ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#createdObjects li {
+	padding: .5rem;
+	border-bottom: 1px solid #000000;
+}
+
+#createdObjects li.selected {
+	background-color: #CCCCCC;
+}
+/**
+ * End Created Objects
+ */
+
+/**
+ * Selected Object
+ */
+#selectedObject {
+	background-color: #F9F9F9;
+	box-sizing: border-box;
+	left: 0;
+	padding: .5rem;
+	position: fixed;
+	right: 25%;
+	top: 0;
+}
+/**
+ * End Selected Object
+ */
+
+/**
+ * Camera Rotation
+ */
+#cameraRotation {
+	background-color: #F9F9F9;
+	box-sizing: border-box;
+	left: 0;
+	padding: .5rem;
+	position: fixed;
+	right: 25%;
+	bottom: 0;
+}
+
+#cameraRotation > input {
+	width: 30%;
+}
+/**
+ * End Camera Rotation
+ */

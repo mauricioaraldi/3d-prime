@@ -1,0 +1,12 @@
+{
+	"rings": [
+		"ring1",
+		"ring2",
+		"ring3",
+		"ringPrime"
+	],
+
+	"stones": [
+		"stone1"
+	]
+}
